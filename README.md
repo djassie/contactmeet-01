@@ -25,6 +25,9 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 cd <extension-dir>
 cv dl contactmeet@https://github.com/djgacay/contactmeet/archive/master.zip
 ```
+## Extension tested environment
+
+The extension was tested in Linux(Ubuntu 20.04 environment), some system may not work, but works in preferrable Cloud or Linux servers. Not tested in Windows server. 
 
 ## Installation (CLI, Git)
 
