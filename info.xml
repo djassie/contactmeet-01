@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<extension key="contactmeet" type="module">
+  <file>contactmeet</file>
+  <name>contactmeet</name>
+  <description>contactmeet</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Red_edge</author>
+    <email>elitedsusobhan@gmail.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/djgacay/Contactmeet-01a</url>
+    <url desc="Documentation">https://github.com/djgacay/Contactmeet-01a</url>
+    <url desc="Support">https://github.com/djgacay/Contactmeet-01a</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2021-08-13</releaseDate>
+  <version>1.0.1.4</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>5.0</ver>
+  </compatibility>
+  <comments>Testing number of meetings of a contact</comments>
+  <classloader>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Contactmeet</namespace>
+  </civix>
+</extension>
