@@ -10,8 +10,8 @@
   </maintainer>
   <urls>
     <url desc="Main Extension Page">https://github.com/djgacay/Contactmeet-01a</url>
-    <url desc="Documentation">https://github.com/djgacay/Contactmeet-01a</url>
-    <url desc="Support">https://github.com/djgacay/Contactmeet-01a</url>
+    <url desc="Documentation">https://github.com/djgacay/contactmeet-01/blob/main/README.md</url>
+    <url desc="Support">https://github.com/djgacay/contactmeet-01/issues</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2021-08-13</releaseDate>
