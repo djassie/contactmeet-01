@@ -9,7 +9,8 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 ## Requirements
 
 * PHP v7.2+
-* CiviCRM (*FIXME: Version number*)
+* CiviCRM v5.30+
+* MySQL 5.7+
 
 ## Installation (Web UI)
 
@@ -37,8 +38,12 @@ cv en contactmeet
 
 ## Getting Started
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+Install the module, and use the token from token search or just put **{contactmeet.total_meetings}**. 
+
+*If the contact has any meeting - then it will return the number of **meetings**
+* else number of meetings returns is **0** when the contact has no meeting
+
 
 ## Known Issues
 
-(* FIXME *)
+The extension is not installing, MySQL version should be 5.7+, only Mysql 5.7 latest version is required. 
