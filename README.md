@@ -2,7 +2,7 @@
 
 ![Screenshot](/images/screenshot.png)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+The CiviCRM module for the number of meetings (Activity) of a contact
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
