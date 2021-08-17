@@ -243,35 +243,15 @@ function contactmeet_is_token_present($tokens) {
  * @throws \Civi\API\Exception\UnauthorizedException
  */
 function contactmeet_retrieve_total_meetings($contactID){
-  /*
-  $activities = \Civi\Api4\Activity::get()
-  ->selectRowCount()
-  ->setJoin([
-    ['Contact AS contact', 'LEFT', 'ActivityContact'],
-  ])
-  ->addWhere('activity_type_id', '=', '1')
-  ->addWhere('contact.id', '=', $contactID)
-  ->execute();
-  */
-  /*
-  $activities = \Civi\Api4\Activity::get(FALSE)
-  ->selectRowCount()
-  ->addSelect('activity_type_id')
-  ->addJoin('Contact AS contact', 'LEFT', 'ActivityContact')
-  ->addWhere('contact.id', '=', $contactID)
-  ->addWhere('activity_type_id', '=', '1')
-  ->setLimit(1)
-  ->execute();
-  */
 
   $activities = \Civi\Api4\Activity::get()
   ->addSelect('id')
-  ->addJoin('Contact AS contact', 'LEFT', 'ActivityContact', ['contact.id', '=', 119])
+  ->addJoin('Contact AS contact', 'LEFT', 'ActivityContact', ['contact.id', '=', $contactID])
   ->addWhere('activity_type_id', '=', 1)
   ->setLimit(25)
   ->execute();
 
-  file_put_contents('activity_detail1.txt', serialize($activities));
+  //file_put_contents('activity_detail1.txt', serialize($activities)); only for testing if activities are fetched right
 
   if(!($activities == NULL)){
     file_put_contents('not_null.txt', 'TRUE');
