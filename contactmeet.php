@@ -251,5 +251,5 @@ function contactmeet_retrieve_total_meetings($contactID){
   ->setLimit(25)
   ->execute();
 
-  //file_put_contents('activity_detail1.txt', serialize($activities)); only for cgecking if activities are fetched right
+  //file_put_contents('activity_detail1.txt', serialize($activities)); only for checking if activities are fetched right
 }
